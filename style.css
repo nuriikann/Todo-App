@@ -1,0 +1,94 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    margin:auto;
+    text-align: center;
+    background-color: #272727;
+}
+
+h1{
+    color: limegreen;
+}
+
+li{
+    list-style: none;
+    justify-content: space-between;
+}
+
+footer{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px 10px 10px 20px;
+    color: limegreen;
+}
+
+.todoInput{
+    margin: auto;
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    border: 2px solid limegreen;
+    border-radius: 10px;
+}
+
+.filters{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: inline-flex;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.todoList.completed li:not(.completed) {
+    display: none;
+}
+
+.todoList.active li.completed {
+    display: none;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.delete{
+    padding: 5px 10px;
+    color: limegreen;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+.task{
+    color: limegreen;
+    border: 1px solid limegreen;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+}
+
+.btnCompleted{
+    background-color: black;
+    color: limegreen;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.452),
+	            0 5px 10px 0 rgba(0, 0, 0, 0.452);
+}
